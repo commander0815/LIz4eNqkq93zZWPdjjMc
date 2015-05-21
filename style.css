@@ -74,7 +74,11 @@
 /* ---------------------------------------------------*/
 /* ----------Menü for mousover-----------------------*/	
 /* -------------------------------------------------*/	
-ul.nav a:hover { background-color: #72AE24 !important; }
+ul.nav a:hover { 
+	background-color: #72AE24 !important;
+		}
+
+
 nav ul ul {
 	display: none;
 		}
@@ -101,5 +105,3 @@ nav ul li:hover a {
 
 		}
 
-		
-		
