@@ -1,13 +1,28 @@
+/* ---------------------------------------------------*/
+/* ----------Default Classes-------------------------*/	
+/* -------------------------------------------------*/	
+.white {
+		color: #999;
+		}
 
-.logo {
+.logoTop {
 	background: url(img/IMG_1099.jpg);
 	background-size: 100% 100%;
-	width: 1300px;
-	height: 200px;
-	border-radius: 10px;
-	margin-left: auto;
-    margin-right: auto;
+	width: 950px;
+	height: 75px;
+	border-radius: 5px;
+	margin-bottom: -15px;
+	margin-top: 5px;
 		}
+		
+.logoMenu{
+	background: url(img/IMG_1099.jpg);
+	background-size: 100% 100%;
+	width: 250px;
+	height: 50px;
+	border-radius: 5px;
+	margin-top: -15px;
+		}		
 		
 .txt {
 	width: 500px; 
@@ -25,32 +40,47 @@
 	margin-left: auto;
     margin-right: auto;
 		} 
-/* ---------------------------------------*/
-/* ----------Menü weisser balken---------*/	
-/* -------------------------------------*/	
 
+		
+/* ---------------------------------------------------*/
+/* ----------Bootstrap Stylings----------------------*/	
+/* -------------------------------------------------*/	
 
-#header{height: 48px;width: 100%;z-index: 1000;}
-
-.fixed {background: url(http://static.tumblr.com/njty47g/Omoleufdi/topbar_bg.png) left top repeat-x;
-position: fixed;left: 0;
--webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
--moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);}
-
-.inner {width: 940px;margin: 0 auto;height: 48px;}
-
-
-.shadow{width: 100%;height: 5px;position: absolute;left: 0;bottom: -5px;z-index: 500;display: none;}	
+.container-fluid {
+		background-color: #113A00;
+		}
 		
 		
-		
-/* ---------------------------------------*/
-/* ----------Menü -----------------------*/	
-/* -------------------------------------*/	
+.container-fluid2 {
+		background-color: #246508;
+		border-radius: 5px;
+				}
 
+.container-fluid3 {
+		background-color: #113A00;
+		}
+
+.navbar {
+		background-color: #113A00;
+				}
+				
+	
+.btn {
+		background-color: #E1E1E1;
+	 }
+	 
+	 
+		
+/* ---------------------------------------------------*/
+/* ----------Menü for mousover-----------------------*/	
+/* -------------------------------------------------*/	
+ul.nav a:hover { background-color: #72AE24 !important; }
 nav ul ul {
 	display: none;
+		}
+		
+nav ul li  a{
+		color: #aaa;
 		}
 		
 nav ul li:hover > ul {
@@ -59,36 +89,17 @@ nav ul li:hover > ul {
 			
 nav ul {
 	padding: 0px;
-		background: linear-gradient(top, #E1E1E1 0%, #bbbbbb 100%);  
-	background: -moz-linear-gradient(top, #E1E1E1 0%, #bbbbbb 100%); 
-	background: -webkit-linear-gradient(top, #E1E1E1 0%,#bbbbbb 100%); 
+	background: -moz-linear-gradient(top, #246508 90%, #72AE24  6%); 
 	list-style: none;
 	position: relative;
-	opacity:0.8;
-	border-radius: 10px; 
 	display: inline-table;
 		}			
-			
-nav ul:after {
-		content: ""; clear: both; display: block;
-	}	
+
 	
-nav ul li {
-	float: left;
-		}
-		
-		
 nav ul li:hover a {
 			color: #000000;
-			background: linear-gradient(top, #4f5964 0%, #35D42A 40%);
-			background: -moz-linear-gradient(top, #4f5964 0%, #35D42A 40%);
-			background: -webkit-linear-gradient(top, #4f5964 0%,#35D42A 40%);
-			border-radius: 10px; 
+
 		}
-nav ul li a {
-		display: block;
-		text-decoration: none;
-		color: #000000;
-		padding: 6px 40px;
-			}
-					
+
+		
+		
