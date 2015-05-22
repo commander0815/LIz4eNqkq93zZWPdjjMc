@@ -18,16 +18,23 @@
 
 <!-- external style, old stuff n more -->
 <link href="style.css" type="text/css" rel="stylesheet">
-<link rel="stylesheet" href="slider.css">
+<link href="gallery.css" type="text/css" rel="stylesheet">
 
-<script type='text/javascript'>
-    $(document).ready(function() {
-         $('.carousel').carousel({
-             interval: 7000
-         })
-    });    
+<script>
+       $(document).ready(function(){
+           $('div img').on('click',function(){
+                var src = $(this).attr('src');
+                var img = '<img src="' + src + '" class="img-responsive"/>';
+                $('#myModal').modal();
+                $('#myModal').on('shown.bs.modal', function(){
+                    $('#myModal .modal-body').html(img);
+                });
+                $('#myModal').on('hidden.bs.modal', function(){
+                    $('#myModal .modal-body').html('');
+                });
+           });  
+        })
 </script>
-
 
 </head>
 <body>
@@ -35,7 +42,6 @@
 <!------------------------------------------------------------------------------------------------------------------->
 <!-- TopPage/ Navbar Start -------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------------------------------------------------------->
-
 
  <div class="container navbar-fixed-top">
 			<div class="container-fluid">
@@ -77,59 +83,11 @@
 		</nav>
 	</div>
 </div>
-
-<!------------------------------------------------------------------------------------------------>
-<!--Slideshow------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------>
-    <header id="myCarousel" class="carousel slide class container">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('img/IMG_1099.jpg');"></div>
-                <div class="carousel-caption">
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('img/IMG_1099.jpg');"></div>
-                <div class="carousel-caption">
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('img/IMG_1099.jpg');"></div>
-                <div class="carousel-caption">
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-
-    </header>
-
-
-
 <!------------------------------------------------------------------------------------------------>
 <!--Page starts here------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------------------------>
 
 
-
-<div class="container-fluid4">
 	<div class="container">
 		<div class="jumbotron">
 			<div class="row">
@@ -141,10 +99,9 @@
 			</div>
 		</div>
 	</div>
-</div>
 
 
-<div class="container-fluid3">
+
 	<div class="container">
 		<div class="jumbotron">
 			<div class="row">
@@ -156,7 +113,43 @@
 			</div>
 		</div>
 	</div>
-</div>
+
+
+	<div class="container">
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-sm-8" >
+			
+				</div>
+				<div class="col-sm-4" style="background-color:#0000000;">
+				<div id='toptext'align="right"><h3>Something in munich</h3></div></div>
+			</div>
+		</div>
+	</div>
+
+
+
+<div class="container">
+   <div class="row">
+		<div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive"" src="img/IMG_1099.jpg"/></div>
+		<div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive"" src="img/IMG_1099.jpg"/></div>
+		<div class="col-lg-3 col-sm-4 col-xs-64"><img class="thumbnail img-responsive"" src="img/IMG_1099.jpg"/></div>
+		<div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive"" src="img/IMG_1099.jpg"/></div>
+		<div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive"" src="img/IMG_1099.jpg"/></div>
+		<div class="col-lg-3 col-sm-4 col-xs-64"><img class="thumbnail img-responsive"" src="img/IMG_1099.jpg"/></div>
+		<div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive"" src="img/IMG_1099.jpg"/></div>
+		<div class="col-lg-3 col-sm-4 col-xs-6"><img class="thumbnail img-responsive"" src="img/IMG_1099.jpg"/></div>
+		<div class="col-lg-3 col-sm-4 col-xs-64"><img class="thumbnail img-responsive"" src="img/IMG_1099.jpg"/></div>
+	</div>
+
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">         
+          <div class="modal-body">                
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
 
 </body>
