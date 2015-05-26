@@ -1,0 +1,43 @@
+<div class="container-fluid navbar-fixed-top">
+			<div class="row">
+				<div class="col-sm-8">
+				
+				</div>
+					<div class="col-sm-4" color="#777">
+				<div id='toptext'align="right"><h3><div class="white">Something in munich</div></h3></div>
+					</div>
+			</div>
+<nav class="navbar">
+	<div class="container-fluid2">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>	  
+	<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">the green leaf<span class="sr-only">(current)</span></a></li>
+					<li><a href="news.html">news</a></li>
+					
+				<li class="dropdown" color="#999">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">location <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="gallery.html">gallery</a></li>
+						<li class="divider"></li>
+						<li><a href="rules.html">rules</a></li>	
+					</ul>
+				</li>
+				<li><a href="supplier.html">supplier</a></li>
+			</ul>  
+			<ul class="nav navbar-nav nov">
+					<li><a href="contact.html">contact us</a></li>
+					<li><a href="news_de.html">deutsch</a></li>
+			</ul>
+		</div>
+  </div>
+</nav>
+</div>
+

@@ -8,8 +8,7 @@ body {
 		}
 
 .white {
-		color: #999;
-		
+		color: #DDD;
 		}
 
 .logoTop {
@@ -21,22 +20,28 @@ body {
 	margin-bottom: -15px;
 	margin-top: 5px;
 		}
-		
-		
-	
-
 
 		
 /* ---------------------------------------------------*/
 /* ----------Bootstrap Stylings----------------------*/	
 /* -------------------------------------------------*/	
-
-
-
-
+	
+	 
+.container {
+				width: 85%;
+			}
+			
+.container3 {
+				background-color: #CCC;
+				width: 82%;
+				border-radius: 10px;
+				margin-top: 20px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
 .container-fluid {
 		background-color: #113A00;
-
 		}
 		
 .container-fluid2 {
@@ -53,17 +58,9 @@ body {
 		margin-top: 25px;
 		}
 
-.navbar {
-		background-color: #246508;
-		border-radius: 10px
-				}
 .divider {
 		border:  1px solid #113A00;
-		}				
-	
-.btn {
-		background-color: #E1E1E1;
-	 }
+		}		
 
 .dropdown-toggle{
 		border-radius: 10px;
@@ -71,11 +68,26 @@ body {
 	 
 .dropdown-menu {
 		background-color: #246508;
-				} 
-		
+				} 		
+.jumbotron {
+		background-color: #CCC
+			}
+				
+.navbar {
+		background-color: #246508;
+		border-radius: 10px
+				}
+
+.navi {
+		margin-top: 15px;
+		color: #aaa;
+		}				
+				
+
 /* ---------------------------------------------------*/
-/* ----------Menü for mousover-----------------------*/	
+/* ----------Menü Styles-----------------------------*/	
 /* -------------------------------------------------*/	
+
 .nov {
 		float: right;}
 
@@ -116,3 +128,4 @@ nav ul li:hover a {
 		background-color: #72AE24 ;
 		color: #000000;
 		}
+		

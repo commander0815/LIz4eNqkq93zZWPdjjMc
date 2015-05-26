@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<title>the green leaf - munich</title>
+<meta name="description" content="Welcome to one of the first coffeeshops in munich. We offer best quality weed, drinks and snacks in our new location. Check Twitter, Facebook for events.">
 <meta charset="utf-8"> 
 <!--  for mobile --> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,11 +16,12 @@
 <!-- Latest compiled JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-
 <!-- external style, old stuff n more -->
-<link href="style.css" type="text/css" rel="stylesheet">
-<script src="test.js"></script>
-
+<link href="styles/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="styles/slider.css">
+<link rel="styles/stylesheet" href="bootstrap-social.css">
+<link href="assets/css/font-awesome.css" rel="stylesheet">
+<link href="assets/css/docs.css" rel="stylesheet" >
 
 </head>
 <body>
@@ -27,14 +29,16 @@
 <!------------------------------------------------------------------------------------------------------------------->
 <!-- TopPage/ Navbar Start -------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------------------------------------------------------->
+
+
  <div class="container navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-8">
 						<img src="img/IMG_1099.jpg" height="75px" width="800px">
 					</div>
-					<div class="col-sm-4" color="#777">
-						<div id='toptext'align="right"><h3><div class="white">Something in munich</div></h3></div>
+					<div class="col-sm-4">
+						<div id='toptext'align="right"><h5><div class="white"><strong>Open: Mo-Sa: 10:00-20:00</strong> <br> blahblubbstr 2 <br>80808 Munich</div></h5></div>
 					</div>
 				</div>
 			</div>	
@@ -48,17 +52,25 @@
 					<li><a href="news.html">news</a></li>			
 						
 						<li class="dropdown" color="#999">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">location <span class="caret"></span></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">location <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
+									<li><a href="directions.html">directions</a></li>
+									<li class="divider"></li>
 									<li><a href="gallery.html">gallery</a></li>
 									<li class="divider"></li>
 									<li><a href="rules.html">rules</a></li>	
+									
 								</ul>
 						</li>
 					<li><a href="supplier.html">supplier</a></li>
 				</ul>  
 				
 				<ul class="nav navbar-nav nov">
+				<li class="dropdown" color="#999">
+					<div class="navi">Follow us:<div>
+					<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
 					<li><a href="contact.html">contact us</a></li>
 					<li><a href="gallery_de.html">deutsch</a></li>
 				</ul>
@@ -99,6 +111,22 @@
 		</div>
 	</div>
 </div>
+
+<!------------------------------------------------------------------------------------------------>
+<!--Footer---------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+
+<footer class="bs-docs-footer" role="contentinfo">
+	<div class="container">
+		<div class="navi btn"><a href="contact.html">Impressum</a></div>
+		<li class="follow-btn">
+			<iframe id="twitter-widget-1" class="twitter-follow-button twitter-follow-button" frameborder="0" scrolling="no" allowtransparency="true" src="http://platform.twitter.com/widgets/follow_button.50005fe33691ad15041f7199457ac3e0.en.html#_=1432640370441&dnt=false&id=twitter-widget-1&lang=en&screen_name=getbootstrap&show_count=true&show_screen_name=true&size=m" title="Twitter Follow Button" data-twttr-rendered="true" style="position: static; visibility: visible; width: 233px; height: 20px;">
+		</li>
+		<li class="tweet-btn">
+			<iframe id="twitter-widget-0" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" frameborder="0" scrolling="no" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.b169aa788731255dd55f1bb243b660e1.en.html#_=1432640370440&count=horizontal&dnt=false&id=twitter-widget-0&lang=en&original_referer=http%3A%2F%2Fgetbootstrap.com%2Fcss%2F&related=mdo%3ACreator%20of%20Bootstrap&size=m&text=CSS%20%C2%B7%20Bootstrap&url=http%3A%2F%2Fgetbootstrap.com%2F&via=getbootstrap" title="Twitter Tweet Button" data-twttr-rendered="true" style="position: static; visibility: visible; width: 98px; height: 20px;">
+		</li>
+	</div>
+</footer>	
 
 
 </body>
